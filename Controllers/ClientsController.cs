@@ -31,7 +31,7 @@ public class ClientsController : Controller
         return View(client);
     }
     
-    public IActionResult Store([Bind("Names,LastNames,Email,Phone")] Client client)
+    public IActionResult Store([Bind("Name,LastNames,Email,Phone")] Client client)
     {
         if (ModelState.IsValid)
         {
